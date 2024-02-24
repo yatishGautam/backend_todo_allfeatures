@@ -1,4 +1,5 @@
 const userModel = require('../../models/usermodel');
+
 async function findUserByUserName(userNameToFind){
     try {
         const user = await userModel.findOne({ username: userNameToFind });
